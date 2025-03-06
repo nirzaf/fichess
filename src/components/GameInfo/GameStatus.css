@@ -1,0 +1,43 @@
+.game-status {
+  margin: 20px auto;
+  max-width: 560px;
+}
+
+.status-message {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border-radius: 4px;
+}
+
+.captured-pieces-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.captured-pieces {
+  flex: 1;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 4px;
+}
+
+.captured-pieces h3 {
+  margin-top: 0;
+  font-size: 16px;
+  text-align: center;
+}
+
+.pieces-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.captured-piece {
+  font-size: 24px;
+}

@@ -1,0 +1,42 @@
+.chess-board-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.chess-board {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  width: 560px;
+  height: 560px;
+  border: 2px solid #333;
+  position: relative;
+}
+
+.file-coordinates {
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  bottom: -25px;
+  left: 0;
+  right: 0;
+}
+
+.rank-coordinates {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  position: absolute;
+  left: -25px;
+  top: 0;
+  bottom: 0;
+}
+
+.coordinate {
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+}

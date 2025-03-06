@@ -1,0 +1,57 @@
+.square {
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.light-square {
+  background-color: #f0f0c9; /* Light green-beige color from the image */
+}
+
+.dark-square {
+  background-color: #769656; /* Dark green color from the image */
+}
+
+.selected-square {
+  background-color: rgba(173, 216, 230, 0.7);
+}
+
+.valid-move-square {
+  position: relative;
+}
+
+.move-indicator {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.2);
+  position: absolute;
+}
+
+.last-move-square {
+  background-color: rgba(255, 255, 0, 0.3);
+}
+
+/* Add file and rank labels */
+.square[data-position^="a1"], .square[data-position^="b1"], 
+.square[data-position^="c1"], .square[data-position^="d1"], 
+.square[data-position^="e1"], .square[data-position^="f1"], 
+.square[data-position^="g1"], .square[data-position^="h1"] {
+  position: relative;
+}
+
+.square[data-position^="a1"]::before, .square[data-position^="b1"]::before,
+.square[data-position^="c1"]::before, .square[data-position^="d1"]::before,
+.square[data-position^="e1"]::before, .square[data-position^="f1"]::before,
+.square[data-position^="g1"]::before, .square[data-position^="h1"]::before {
+  content: attr(data-position);
+  position: absolute;
+  bottom: 2px;
+  right: 2px;
+  font-size: 10px;
+  color: rgba(0, 0, 0, 0.6);
+}
