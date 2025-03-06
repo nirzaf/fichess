@@ -2,7 +2,7 @@ import React from 'react';
 // Removing unused import
 // import { useDrop } from 'react-dnd';
 import { Piece, Position } from '../../types/chess.types';
-import ChessPiece from '../Pieces/ChessPiece';
+import ChessPiece from '../Pieces/ChessPiece.tsx';
 import './Square.css';
 
 interface SquareProps {

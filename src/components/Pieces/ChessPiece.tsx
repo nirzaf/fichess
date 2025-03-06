@@ -1,9 +1,9 @@
 import React from 'react';
-// Removing unused import
+// Removing unused imports
 // import { useDrag } from 'react-dnd';
-import { useSelector } from 'react-redux';
+// import { useSelector } from 'react-redux';
 import { Piece, Position } from '../../types/chess.types';
-import { RootState } from '../../store/store';
+// import { RootState } from '../../store/store';
 import './ChessPiece.css';
 
 interface ChessPieceProps {
@@ -13,7 +13,8 @@ interface ChessPieceProps {
 
 // Destructuring only what we need to avoid unused variable warnings
 const ChessPiece: React.FC<ChessPieceProps> = ({ piece }) => {
-  const { currentPlayer } = useSelector((state: RootState) => state.game);
+  // Removing unused variable
+  // const { currentPlayer } = useSelector((state: RootState) => state.game);
   // Commenting out unused variables
 
   // Map piece type and color to the corresponding piece class
